@@ -1,0 +1,15 @@
+/* Make stupid highlighted messages less annoying */
+.channel-points-reward-line > .tw-inline-flex {
+  color: inherit !important;
+}
+.channel-points-reward-line {
+  background: #755ebc51 !important;
+  border-left: 0 !important;
+  border-right: 4px solid #9147ff;
+  border-right: 4px solid var(--color-accent);
+}
+.chat-line__message-body--highlighted {
+  background: transparent !important;
+  border: 0 !important;
+  color: inherit !important;
+}
