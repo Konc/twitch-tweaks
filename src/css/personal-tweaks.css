@@ -1,0 +1,18 @@
+/* Hide normal sub button */
+button[data-test-selector="subscribe-button__dropdown"],
+/* Hide normal sub button in user card */
+button[data-test-selector="subscribe-button__subscribe-tier-button"],
+/* Hide gift sub button */
+button[data-test-selector="gift-subscribe-button"] {
+  display: none !important;
+}
+
+/* Hide the cheer leaderboard */
+.channel-leaderboard {
+  display: none !important;
+}
+
+/* Hide sidebar that expands on hover*/
+.side-nav {
+  display: none !important;
+}
