@@ -1,0 +1,72 @@
+/* Tweaks to the new video stats box */
+div[data-a-target="player-overlay-video-stats"] {
+  /* Smaller text size and line height */
+  font-size: 10px !important;
+  line-height: 12px !important;
+
+  /* Set text to white color with a 1px black outline */
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000 !important;
+
+  /* Reposition to not cover support widget and counter in #sacriel */
+  position: relative;
+  top: 20em !important;
+}
+
+/* Transparent background */
+div[data-a-target="player-overlay-video-stats"],
+div[data-a-target="player-overlay-video-stats"] > div {
+  background: transparent !important;
+}
+
+/* Hide the header row */
+div[data-a-target="player-overlay-video-stats"] .tw-table-header {
+  display: none !important;
+}
+
+div[data-a-target="player-overlay-video-stats-row"] .tw-table-cell {
+  /* Remove annoying padding */
+  padding: 0 !important;
+
+  /* Remove border */
+  border: 0 !important;
+}
+
+/*
+nth-of-type reference table:
+ 1: video resolution
+ 2: display resolution
+ 3: fps
+ 4: skipped frames
+ 5: buffer size
+ 6: latency to broadcaster
+ 7: latency mode
+ 8: playback rate
+ 9: backend version
+10: serving id
+11: codecs
+12: play session id
+*/
+/* Hide the items you don't want in the video stats */
+tr[data-a-target="player-overlay-video-stats-row"]:nth-of-type(2),
+tr[data-a-target="player-overlay-video-stats-row"]:nth-of-type(7),
+tr[data-a-target="player-overlay-video-stats-row"]:nth-of-type(9),
+tr[data-a-target="player-overlay-video-stats-row"]:nth-of-type(10),
+tr[data-a-target="player-overlay-video-stats-row"]:nth-of-type(11),
+tr[data-a-target="player-overlay-video-stats-row"]:nth-of-type(12) {
+  display: none !important;
+}
+
+/* Hide the close button */
+div[data-a-target="player-overlay-video-stats"] button {
+  display: none !important;
+}
+
+div[data-a-target="player-overlay-video-stats"],
+div[data-a-target="player-overlay-video-stats"] .tw-table-heading,
+div[data-a-target="player-overlay-video-stats"] .tw-table {
+  background-color: transparent !important;
+  border: 0 !important;
+  box-shadow: 0 0 0 0 transparent !important;
+}
