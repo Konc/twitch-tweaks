@@ -1,0 +1,18 @@
+/* Stop stream thumbnails from jumping on hover */
+.live-channel-card:hover .tw-hover-accent-effect__children {
+  transform: none !important;
+}
+
+/* Custom hover effect */
+.live-channel-card:hover,
+.tw-box-art-card:hover {
+  -webkit-box-shadow: 0 0 15px 0 rgba(24, 25, 35, 0.6);
+  -moz-box-shadow: 0 0 15px 0 rgba(24, 25, 35, 0.6);
+  box-shadow: 0 0 15px 0 rgba(24, 25, 35, 0.6);
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.tw-card-body {
+  padding: 0 0 0 3px;
+}
