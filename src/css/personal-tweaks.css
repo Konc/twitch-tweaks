@@ -13,6 +13,7 @@ button[data-test-selector="gift-subscribe-button"] {
 }
 
 /* Hide sidebar that expands on hover*/
-.side-nav {
+.side-nav,
+#sideNav {
   display: none !important;
 }
