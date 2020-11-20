@@ -25,7 +25,7 @@ div[data-a-target="player-overlay-video-stats"] .tw-table-header {
   display: none !important;
 }
 
-div[data-a-target="player-overlay-video-stats-row"] .tw-table-cell {
+tr[data-a-target="player-overlay-video-stats-row"] td {
   /* Remove annoying padding */
   padding: 0 !important;
 
