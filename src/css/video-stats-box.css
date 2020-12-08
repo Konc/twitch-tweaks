@@ -47,6 +47,7 @@ nth-of-type reference table:
 10: serving id
 11: codecs
 12: play session id
+13: protocol
 */
 /* Hide the items you don't want in the video stats */
 tr[data-a-target="player-overlay-video-stats-row"]:nth-of-type(2),
@@ -54,7 +55,8 @@ tr[data-a-target="player-overlay-video-stats-row"]:nth-of-type(7),
 tr[data-a-target="player-overlay-video-stats-row"]:nth-of-type(9),
 tr[data-a-target="player-overlay-video-stats-row"]:nth-of-type(10),
 tr[data-a-target="player-overlay-video-stats-row"]:nth-of-type(11),
-tr[data-a-target="player-overlay-video-stats-row"]:nth-of-type(12) {
+tr[data-a-target="player-overlay-video-stats-row"]:nth-of-type(12),
+tr[data-a-target="player-overlay-video-stats-row"]:nth-of-type(13) {
   display: none !important;
 }
 
