@@ -3,6 +3,11 @@
   transform: none !important;
 }
 
+/* Also stop stream thumbnails from jumping on focus-within */
+.live-channel-card div:focus-within div {
+  transform: none !important;
+}
+
 /* Custom hover effect */
 .live-channel-card:hover,
 .tw-box-art-card:hover {
